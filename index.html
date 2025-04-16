@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Volunteer Event Invitation project</title>
+        <style type="text/css">
+          body{
+           /** background-color: linear-gradient(to right, #adeb1c,#cbe987);**/
+           background-image:url("background-invitation.jpg");
+            margin: 0;
+            justify-content: center;
+            align-items: center;
+            /**background-repeat:  no-repeat;**/
+           /** background-position: center;**/
+            font-family: 'Times New Roman', Times, serif;
+            height: 100vh;
+            
+            display: flex;
+          }
+
+          .invitation-info{
+            background-color: rgba(150, 113, 133, 0.473);
+            padding: 35px;
+            text-align: center;
+            border-radius: 30px;
+            box-shadow: 0 0 25px rgba(0, 0,0, 15);
+            max-width: 850px;
+            width:90%;
+          }
+
+          .invitation-info h1{
+            font-size: 24px;
+            color: rgb(230, 245, 20);
+            margin-bottom: 15px;
+            font-weight: bold;
+        
+          }
+          .paragraph-massage{
+ 
+            font-size: 20px;
+            font-style:italic;
+            margin: 10px 0 20px;
+            color: rgb(184, 250, 4);
+
+          }
+
+          span{
+            color: rgb(243, 207, 3);
+          }
+
+          .details-card{
+
+           font-size: 18px;
+           font-weight: bold;
+           margin: 10px 0;
+
+          }
+
+          .form-details{
+            margin-top: 24px;
+            flex-direction: column;
+            gap: 10px;
+            display: flex;
+
+          }
+
+          .form-details input{
+            border: 1px solid black;
+            padding: 10px;
+            border-radius: 10px;
+            font-size: 14px;
+          }
+          .form-details button{
+            padding: 10px;
+            background-color: rgb(34, 59, 59);
+            color: white;
+            font-size: 20px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+
+          }
+          .form-details button:hover{
+            background-color: rgb(4, 44, 175);
+          }
+        </style>
+    </head>  
+    <body>
+
+        <div class="invitation-info">
+            <h1>You are Invited by "Aoam Association"</h1>
+            <p class="paragraph-massage">
+                Join us in our annual Volunteer event under the theme
+                :<br><span><strong>....Make Your Mark....</strong></span>
+            </p>
+
+            <div class="details-card">
+                <p><strong>Date:</strong> Saturday , April 28 , 2025</p>
+
+                <p><strong>Time:</strong> 1:00<sub>pm</sub> - 3:00<sub>pm</sub></p>
+                
+                <p><strong>Location:</strong> City Public Park</p>
+            </div>
+
+            <form class="form-details" onsubmit="event.preventDefault();alert('Your RSVP has been received!')">
+                <input type="text" placeholder="Enter Full Name" required>
+                <input type="tel" placeholder="Enter Phone Number"
+                required>
+                <input type="email" placeholder=" E-mail (optional)">
+                <button type="submit" >Confirm Attendance</button>
+                
+            </form>
+
+
+        </div>
+
+    </body>  
+</html>   
